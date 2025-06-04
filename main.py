@@ -63,7 +63,7 @@ def encode_message():
     print('=== КОДИРОВАНИЕ ===')
 
     # сообщение для кодирования
-    text = 'Hi!'
+    text = 'Beautiful'
     print('Кодируем:', text)
 
     # открываем картинку
@@ -145,8 +145,8 @@ def check_decode():
 
     # извлекаем биты
     bits = []
-    # для Hi! нужно 24 бита (3 символа * 8 бит)
-    for i in range(24):
+    # для Beautiful нужно 72 бита (9 символов * 8 бит)
+    for i in range(72):
         x = coordinates[i][0]
         y = coordinates[i][1]
 
@@ -186,7 +186,7 @@ def check_decode():
     print('Результат проверки:', result)
 
     # проверяем
-    if result == 'Hi!':
+    if result == 'Beautiful':
         print('Проверка прошла успешно!')
     else:
         print('Ошибка при проверке')
